@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Regan's Web Studio | Built to Impress. Designed to Grow.</title>
+<meta name="description" content="Luxury web design agency in South Africa.">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+h1,h2,h3,h4{
+font-family:'Playfair Display',serif;
+}
+
+body::before{
+content:'';
+position:fixed;
+width:700px;
+height:700px;
+background:radial-gradient(circle,rgba(212,175,55,0.14),transparent 70%);
+top:-200px;
+right:-200px;
+filter:blur(50px);
+z-index:-1;
+}
+
+body::after{
+content:'';
+position:fixed;
+width:600px;
+height:600px;
+background:radial-gradient(circle,rgba(255,255,255,0.04),transparent 70%);
+bottom:-200px;
+left:-200px;
+filter:blur(50px);
+z-index:-1;
+}
+
+.glass{
+background:rgba(255,255,255,0.04);
+backdrop-filter:blur(14px);
+border:1px solid rgba(255,255,255,0.08);
+}
+
+.gold{
+color:#d4af37;
+}
+
+.gold-btn{
+background:linear-gradient(135deg,#d4af37,#f3d57a);
+color:black;
+font-weight:700;
+transition:0.4s;
+}
+
+.gold-btn:hover{
+transform:translateY(-3px);
+box-shadow:0 20px 40px rgba(212,175,55,0.2);
+}
+
+.card-hover{
+transition:0.4s;
+}
+
+.card-hover:hover{
+transform:translateY(-10px);
+box-shadow:0 30px 60px rgba(0,0,0,0.5);
+border-color:rgba(212,175,55,0.3);
+}
+
+.gradient-text{
+background:linear-gradient(to right,#fff,#d4af37);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:1s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:768px){
+.hero-title{
+font-size:52px !important;
+line-height:1.05 !important;
+}
+}
+</style>
+</head>
+<body>
+
+<nav class="fixed top-0 left-0 w-full z-50 glass border-b border-white/10">
+<div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+
+<div>
+<h1 class="text-xl md:text-2xl font-bold">Regan's Web Studio</h1>
+<p class="text-xs uppercase tracking-[4px] gold mt-1">Built to Impress. Designed to Grow.</p>
+</div>
+
+<div class="hidden md:flex gap-8 text-sm text-gray-300">
+<a href="#home" class="hover:text-yellow-400 transition">Home</a>
+<a href="#packages" class="hover:text-yellow-400 transition">Packages</a>
+<a href="#about" class="hover:text-yellow-400 transition">About</a>
+<a href="#contact" class="hover:text-yellow-400 transition">Contact</a>
+</div>
+
+<a href="https://wa.me/27814725732" target="_blank" class="gold-btn px-5 py-3 rounded-full text-sm">
+Book Consultation
+</a>
+
+</div>
+</nav>
+
+<section id="home" class="min-h-screen flex items-center px-5 pt-32 pb-20">
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+
+<div class="reveal">
+<p class="gold uppercase tracking-[5px] text-sm mb-6">Luxury Web Design Agency • South Africa</p>
+
+<h1 class="hero-title text-6xl md:text-8xl leading-none font-bold mb-8 gradient-text">
+Elite Websites
+For Modern
+Businesses
+</h1>
+
+<p class="text-gray-300 text-lg leading-relaxed max-w-xl mb-10">
+Regan's Web Studio creates premium digital experiences that help businesses stand out, increase trust and generate more clients.
+</p>
+
+<div class="flex flex-wrap gap-4 mb-14">
+<a href="https://wa.me/27814725732" target="_blank" class="gold-btn px-8 py-4 rounded-full">
+Start Your Project
+</a>
+
+<a href="mailto:Spacexan1@gmail.com" class="border border-yellow-500 px-8 py-4 rounded-full hover:bg-yellow-500 hover:text-black transition">
+Get Your Website
+</a>
+</div>
+
+<div class="grid grid-cols-3 gap-4 max-w-lg">
+<div>
+<h3 class="text-3xl font-bold gold">100%</h3>
+<p class="text-gray-500 text-sm">Responsive</p>
+</div>
+
+<div>
+<h3 class="text-3xl font-bold gold">Modern</h3>
+<p class="text-gray-500 text-sm">UI / UX</p>
+</div>
+
+<div>
+<h3 class="text-3xl font-bold gold">SA</h3>
+<p class="text-gray-500 text-sm">Nationwide</p>
+</div>
+</div>
+</div>
+
+<div class="reveal">
+<div class="glass rounded-[35px] p-5 shadow-2xl">
+<div class="bg-black rounded-[28px] border border-white/10 overflow-hidden">
+
+<div class="flex gap-2 px-5 py-4 border-b border-white/10">
+<div class="w-3 h-3 rounded-full bg-red-500"></div>
+<div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+<div class="w-3 h-3 rounded-full bg-green-500"></div>
+</div>
+
+<div class="p-8">
+<div class="rounded-[30px] bg-gradient-to-br from-yellow-500/20 to-white/5 p-10 min-h-[320px] flex items-center justify-center text-center">
+<div>
+<h2 class="text-4xl md:text-5xl font-bold mb-5">
+Luxury Digital Experiences
+</h2>
+<p class="text-gray-300 text-lg">
+Modern. Elegant. Premium.
+</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="py-24 px-5">
+<div class="max-w-7xl mx-auto reveal">
+
+<div class="text-center mb-20">
+<p class="gold uppercase tracking-[5px] mb-4">Services</p>
+<h2 class="text-5xl md:text-6xl font-bold">Designed To Grow Businesses</h2>
+</div>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="glass rounded-[30px] p-10 card-hover">
+<h3 class="text-3xl font-bold mb-5">Luxury Web Design</h3>
+<p class="text-gray-400 leading-relaxed">
+Premium modern websites designed to elevate brands professionally.
+</p>
+</div>
+
+<div class="glass rounded-[30px] p-10 card-hover">
+<h3 class="text-3xl font-bold mb-5">Modern UI / UX</h3>
+<p class="text-gray-400 leading-relaxed">
+Elegant interfaces crafted for trust, engagement and conversions.
+</p>
+</div>
+
+<div class="glass rounded-[30px] p-10 card-hover">
+<h3 class="text-3xl font-bold mb-5">Digital Presence</h3>
+<p class="text-gray-400 leading-relaxed">
+Professional digital experiences built for ambitious businesses.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="packages" class="py-24 px-5 bg-white/[0.02]">
+<div class="max-w-7xl mx-auto reveal">
+
+<div class="text-center mb-20">
+<p class="gold uppercase tracking-[5px] mb-4">Packages</p>
+<h2 class="text-5xl md:text-6xl font-bold">Choose Your Package</h2>
+</div>
+
+<div class="grid lg:grid-cols-3 gap-8">
+
+<div class="glass rounded-[35px] p-10 card-hover">
+<p class="gold uppercase tracking-[4px] mb-4">Starter Package</p>
+<h3 class="text-4xl font-bold mb-4">Basic Website</h3>
+<h4 class="text-4xl font-bold gold mb-8">R1,500 – R3,500</h4>
+
+<ul class="space-y-4 text-gray-300 mb-10">
+<li>• 1–3 Pages</li>
+<li>• Mobile-Friendly Design</li>
+<li>• Modern Layout</li>
+<li>• Contact Information Section</li>
+<li>• Basic Animations</li>
+<li>• Social Media Links</li>
+<li>• Fast Loading Design</li>
+</ul>
+
+<a href="https://wa.me/27814725732" target="_blank" class="gold-btn block text-center py-4 rounded-full">
+Get This Package
+</a>
+</div>
+
+<div class="glass rounded-[35px] p-10 card-hover border border-yellow-500 relative overflow-hidden">
+
+<div class="absolute top-0 right-0 gold-btn px-5 py-2 rounded-bl-2xl text-sm">
+Most Popular
+</div>
+
+<p class="gold uppercase tracking-[4px] mb-4">Professional Package</p>
+<h3 class="text-4xl font-bold mb-4">Business Website</h3>
+<h4 class="text-4xl font-bold gold mb-8">R4,000 – R8,500</h4>
+
+<ul class="space-y-4 text-gray-300 mb-10">
+<li>• 4–8 Custom Pages</li>
+<li>• Premium Modern Design</li>
+<li>• Responsive Layout</li>
+<li>• Advanced Animations</li>
+<li>• Contact Forms</li>
+<li>• SEO-Friendly Structure</li>
+<li>• Branding Integration</li>
+<li>• Professional UI/UX Design</li>
+</ul>
+
+<a href="https://wa.me/27814725732" target="_blank" class="gold-btn block text-center py-4 rounded-full">
+Start Your Project
+</a>
+</div>
+
+<div class="glass rounded-[35px] p-10 card-hover">
+<p class="gold uppercase tracking-[4px] mb-4">Premium Package</p>
+<h3 class="text-4xl font-bold mb-4">Elite Website</h3>
+<h4 class="text-4xl font-bold gold mb-8">R9,000 – R20,000+</h4>
+
+<ul class="space-y-4 text-gray-300 mb-10">
+<li>• Fully Custom Website Design</li>
+<li>• Luxury Modern UI/UX</li>
+<li>• Advanced Interactive Effects</li>
+<li>• E-Commerce Ready Layouts</li>
+<li>• Booking or Inquiry Systems</li>
+<li>• Performance Optimization</li>
+<li>• Premium Branding Integration</li>
+<li>• Priority Project Support</li>
+</ul>
+
+<a href="mailto:Spacexan1@gmail.com" class="gold-btn block text-center py-4 rounded-full">
+Let's Build Something Amazing
+</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="py-24 px-5">
+<div class="max-w-7xl mx-auto reveal">
+
+<div class="text-center mb-20">
+<p class="gold uppercase tracking-[5px] mb-4">Why Choose Us</p>
+<h2 class="text-5xl md:text-6xl font-bold">Premium By Design</h2>
+</div>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="glass rounded-[30px] p-10 card-hover">
+<h3 class="text-2xl font-bold mb-5">Fast Performance</h3>
+<p class="text-gray-400 leading-relaxed">
+Optimized for smooth experiences across mobile and desktop.
+</p>
+</div>
+
+<div class="glass rounded-[30px] p-10 card-hover">
+<h3 class="text-2xl font-bold mb-5">Luxury Aesthetics</h3>
+<p class="text-gray-400 leading-relaxed">
+Elegant black, gold and white visual identity with cinematic styling.
+</p>
+</div>
+
+<div class="glass rounded-[30px] p-10 card-hover">
+<h3 class="text-2xl font-bold mb-5">Conversion Focused</h3>
+<p class="text-gray-400 leading-relaxed">
+Strategically designed to generate consultations and trust.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="about" class="py-24 px-5 bg-white/[0.02]">
+<div class="max-w-6xl mx-auto reveal text-center">
+
+<p class="gold uppercase tracking-[5px] mb-4">About</p>
+
+<h2 class="text-5xl md:text-6xl font-bold mb-8">
+Built To Impress.
+Designed To Grow.
+</h2>
+
+<p class="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto mb-10">
+Regan's Web Studio is a modern web design agency based in Zeerust, South Africa. We create elegant digital experiences for businesses across South Africa.
+</p>
+
+<a href="https://wa.me/27814725732" target="_blank" class="gold-btn inline-block px-8 py-4 rounded-full">
+Book a Consultation
+</a>
+
+</div>
+</section>
+
+<section class="py-24 px-5">
+<div class="max-w-5xl mx-auto reveal">
+<div class="glass rounded-[40px] p-12 border border-yellow-500/20">
+
+<p class="gold uppercase tracking-[5px] mb-4">Important Notice</p>
+
+<h2 class="text-5xl font-bold mb-8">Professional Service Information</h2>
+
+<ul class="space-y-4 text-gray-300 mb-8">
+<li>• Website Design</li>
+<li>• Front-End Development</li>
+<li>• Digital Design Services</li>
+</ul>
+
+<p class="text-gray-400 leading-relaxed">
+Hosting, domains, advanced backend systems and third-party subscriptions may require additional costs depending on the project.
+</p>
+
+</div>
+</div>
+</section>
+
+<section id="contact" class="py-24 px-5 bg-white/[0.02]">
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 reveal">
+
+<div>
+<p class="gold uppercase tracking-[5px] mb-4">Contact</p>
+
+<h2 class="text-5xl md:text-6xl font-bold mb-8">
+Let's Build Something Amazing.
+</h2>
+
+<p class="text-gray-300 text-lg leading-relaxed mb-10">
+Ready to elevate your business with a luxury website?
+</p>
+
+<div class="space-y-5">
+<div class="glass rounded-2xl p-6">
+<p class="text-gray-400 text-sm mb-2">Phone</p>
+<h4 class="text-2xl font-bold">081 472 5732</h4>
+</div>
+
+<div class="glass rounded-2xl p-6">
+<p class="text-gray-400 text-sm mb-2">Email</p>
+<h4 class="text-2xl font-bold">Spacexan1@gmail.com</h4>
+</div>
+
+<div class="glass rounded-2xl p-6">
+<p class="text-gray-400 text-sm mb-2">Location</p>
+<h4 class="text-2xl font-bold">Zeerust, South Africa</h4>
+</div>
+</div>
+</div>
+
+<div class="glass rounded-[35px] p-10">
+<form class="space-y-6">
+
+<input type="text" placeholder="Your Name" class="w-full bg-black/40 border border-white/10 rounded-2xl p-4 outline-none focus:border-yellow-500">
+
+<input type="email" placeholder="Your Email" class="w-full bg-black/40 border border-white/10 rounded-2xl p-4 outline-none focus:border-yellow-500">
+
+<textarea rows="6" placeholder="Tell us about your project" class="w-full bg-black/40 border border-white/10 rounded-2xl p-4 outline-none focus:border-yellow-500"></textarea>
+
+<a href="mailto:Spacexan1@gmail.com" class="gold-btn block text-center py-5 rounded-2xl text-lg">
+Send Inquiry
+</a>
+
+</form>
+</div>
+
+</div>
+</section>
+
+<footer class="border-t border-white/10 py-14 px-5">
+<div class="max-w-7xl mx-auto text-center">
+
+<h3 class="text-3xl font-bold mb-3">Regan's Web Studio</h3>
+<p class="gold mb-6 tracking-[4px] uppercase text-sm">Built to Impress. Designed to Grow.</p>
+
+<p class="text-gray-400 max-w-2xl mx-auto mb-10">
+Luxury web design experiences for modern businesses across South Africa.
+</p>
+
+<div class="flex justify-center gap-6 flex-wrap mb-10 text-gray-400">
+<a href="#home" class="hover:text-yellow-400 transition">Home</a>
+<a href="#packages" class="hover:text-yellow-400 transition">Packages</a>
+<a href="#about" class="hover:text-yellow-400 transition">About</a>
+<a href="#contact" class="hover:text-yellow-400 transition">Contact</a>
+</div>
+
+<p class="text-gray-600 text-sm">
+© 2026 Regan's Web Studio. All Rights Reserved.
+</p>
+
+</div>
+</footer>
+
+<a href="https://wa.me/27814725732" target="_blank" class="fixed bottom-24 right-5 w-16 h-16 rounded-full bg-green-500 flex items-center justify-center text-white text-3xl shadow-2xl z-50 hover:scale-110 transition">
+💬
+</a>
+
+<div class="fixed bottom-0 left-0 w-full bg-black/95 border-t border-yellow-500/20 p-4 flex justify-between items-center md:hidden z-50">
+
+<a href="tel:0814725732" class="gold text-sm font-semibold">
+Call
+</a>
+
+<a href="https://wa.me/27814725732" target="_blank" class="gold-btn px-5 py-3 rounded-full text-sm">
+WhatsApp
+</a>
+
+<a href="mailto:Spacexan1@gmail.com" class="gold text-sm font-semibold">
+Email
+</a>
+
+</div>
+
+<script>
+const reveals=document.querySelectorAll('.reveal');
+
+function revealOnScroll(){
+reveals.forEach((el)=>{
+const windowHeight=window.innerHeight;
+const elementTop=el.getBoundingClientRect().top;
+
+if(elementTop<windowHeight-100){
+el.classList.add('active');
+}
+});
+}
+
+window.addEventListener('scroll',revealOnScroll);
+revealOnScroll();
+</script>
+
+</body>
+</html>
